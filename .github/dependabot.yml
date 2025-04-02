@@ -13,14 +13,6 @@ updates:
           - "major"
         patterns:
           - "*"
-
-  - package-ecosystem: gradle
-    directory: /
-    schedule:
-      interval: weekly
-    registries:
-      - jfrog-artifactroy
-    groups:
       minor-patch:
         update-types:
           - "minor"
