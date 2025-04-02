@@ -14,11 +14,11 @@ updates:
           - "patch"
         patterns:
           - "*"
-      major:
-        update-types:
-          - "major"
-        patterns:
-          - "*"
+      # major:
+      #   update-types:
+      #     - "major"
+      #   patterns:
+      #     - "*"
 
 registries:
   jfrog-artifactroy:
