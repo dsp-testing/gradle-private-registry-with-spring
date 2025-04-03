@@ -6,22 +6,22 @@ updates:
     schedule:
       interval: weekly
     registries:
-      - jfrog-artifactroy
+      - jfrog-artifactory
     groups:
+      major:
+        update-types:
+          - "major"
+        patterns:
+          - "*"
       minor-patch:
         update-types:
           - "minor"
           - "patch"
         patterns:
           - "*"
-      # major:
-      #   update-types:
-      #     - "major"
-      #   patterns:
-      #     - "*"
 
 registries:
-  jfrog-artifactroy:
+  jfrog-artifactory:
     type: "maven-repository"
     url: "https://jfrogghdemo.jfrog.io/artifactory/dependabot/"
     username: "thavaahariharangit@github.com"  # Store username in GitHub Secrets
