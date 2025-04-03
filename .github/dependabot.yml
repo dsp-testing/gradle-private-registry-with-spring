@@ -8,15 +8,19 @@ updates:
     registries:
       - jfrog-artifactory
     groups:
+      patch:
+        update-types:
+          - "patch"
+        patterns:
+          - "*"
+      minor:
+        update-types:
+          - "minor"
+        patterns:
+          - "*"
       major:
         update-types:
           - "major"
-        patterns:
-          - "*"
-      minor-patch:
-        update-types:
-          - "minor"
-          - "patch"
         patterns:
           - "*"
 
