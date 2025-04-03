@@ -18,14 +18,14 @@ repositories {
 
 dependencies {
     // Minor Update: commons-lang, expected to bump from version 2.1 to 2.2
-    implementation 'commons-lang:commons-lang:2.1'
+    implementation 'commons-lang:commons-lang:2.2'
 
     // Patch Update: commons-logging, expected to bump from version 1.3.1 to 1.3.2
-    implementation 'commons-logging:commons-logging:1.3.1'
+    implementation 'commons-logging:commons-logging:1.3.2'
 
     // Major Update: spring-mock, expected to bump from version 1.2.4 to 2.0.1
     testImplementation 'org.springframework:spring-mock:2.0.1'
 
     // Major Update: junit, expected to bump from version 3.8.1 to 4.11
-    testImplementation 'junit:junit:3.8.1'
+    testImplementation 'junit:junit:3.8.2'
 }
