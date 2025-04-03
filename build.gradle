@@ -1,21 +1,28 @@
-plugins {
-    id 'java'
-}
+version: 2
 
-group = 'com.dependabot'
-version = '0.0.1-RELEASE'
-archivesBaseName = 'basic-pom'
+updates:
+  - package-ecosystem: gradle
+    directory: /
+    schedule:
+      interval: weekly
+    registries:
+      - jfrog-artifactory
+    groups:
+      major:
+        update-types:
+          - "major"
+        patterns:
+          - "*"
+      minor-patch:
+        update-types:
+          - "minor"
+          - "patch"
+        patterns:
+          - "*"
 
-repositories {
-    maven {
-        url = uri("https://jfrogghdemo.jfrog.io/artifactory/dependabot/")
-        credentials {
-            username = "thavaahariharangit@github.com"
-            password = "${{ secrets.JFROG_ARTIFACTORY_TOKEN }}"
-        }
-    }
-}
-
-dependencies {
-    testImplementation 'junit:junit:3.8.1'
-}
+registries:
+  jfrog-artifactory:
+    type: "maven-repository"
+    url: "https://jfrogghdemo.jfrog.io/artifactory/dependabot/"
+    username: "thavaahariharangit@github.com"  # Store username in GitHub Secrets
+    password: "${{ secrets.JFROG_ARTIFACTORY_TOKEN }}"
