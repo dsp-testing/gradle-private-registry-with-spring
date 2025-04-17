@@ -27,5 +27,5 @@ dependencies {
     testImplementation 'org.springframework:spring-mock:2.0.1'
 
     // Major Update: junit, expected to bump from version 3.8.1 to 4.11
-    testImplementation 'junit:junit:3.8.1'
+    testImplementation 'junit:junit:4.11'
 }
