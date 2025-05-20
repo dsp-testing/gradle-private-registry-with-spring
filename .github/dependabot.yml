@@ -7,22 +7,6 @@ updates:
       interval: weekly
     registries:
       - jfrog-artifactory
-    groups:
-      major:
-        update-types:
-          - "major"
-        patterns:
-          - "*"
-      minor:
-        update-types:
-          - "minor"
-        patterns:
-          - "*"
-      patch:
-        update-types:
-          - "patch"
-        patterns:
-          - "*"
 
 registries:
   jfrog-artifactory:
