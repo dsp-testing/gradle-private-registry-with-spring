@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id 'org.springframework.boot' version '3.4.5'
+    id 'org.springframework.boot' version '3.4.3'
 }
 
 group = 'com.dependabot'
@@ -31,5 +31,5 @@ pluginManagement {
 
 dependencies {
     // Major Update: spring-mock, expected to bump from version 1.2.4 to 2.0.1
-    testImplementation 'org.springframework:spring-mock:2.0.1'
+    testImplementation 'org.springframework:spring-mock:1.2.4'
 }
