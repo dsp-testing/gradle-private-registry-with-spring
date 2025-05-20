@@ -17,6 +17,18 @@ repositories {
     }
 }
 
+pluginManagement {
+    repositories {
+        maven {
+            url = uri("https://jfrogghdemo.jfrog.io/artifactory/dependabot/")
+            credentials {
+                username = "thavaahariharangit@github.com"
+                password = "${{ secrets.JFROG_ARTIFACTORY_TOKEN }}"
+            }
+        }
+    }
+}
+
 dependencies {
     // Major Update: spring-mock, expected to bump from version 1.2.4 to 2.0.1
     testImplementation 'org.springframework:spring-mock:1.2.4'
