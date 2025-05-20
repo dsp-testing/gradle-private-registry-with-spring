@@ -8,9 +8,11 @@ updates:
     registries:
       - jfrog-artifactory
 
+
 registries:
   jfrog-artifactory:
     type: "maven-repository"
     url: "https://jfrogghdemo.jfrog.io/artifactory/dependabot/"
     username: "thavaahariharangit@github.com"  # Store username in GitHub Secrets
     password: "${{ secrets.JFROG_ARTIFACTORY_TOKEN }}"
+    replaces-base: true
